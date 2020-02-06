@@ -25,7 +25,8 @@ public class HelloGUI extends JFrame {
         tippButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                tc.tipp(textInput, infoTextField);
+                if (tc.textFieldChecker(textInput) )
+                    tc.tipp(textInput, infoTextField);
             }
         });
     }

@@ -1,8 +1,6 @@
 package gui;
 
 public class TipperModell {
-
-    private static final int INIT_VALUE = 0;
     private int randomNum;
 
     public TipperModell() {
@@ -21,6 +19,8 @@ public class TipperModell {
     public boolean talalt(int num) {
         return (num == getRandomNum());
     }
+
+
 
 
 }
